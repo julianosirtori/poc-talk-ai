@@ -1,0 +1,18 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.visualizer{
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.controllers{
+  display: flex;
+  padding: 16px;
+  gap: 32px;
+}
+
+.controllers button{
+  width: 100%;
+}
