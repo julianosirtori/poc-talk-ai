@@ -1,18 +1,68 @@
+:root{
+  --background: #151f2b;
+  --text-color: #fff;
+  --border: #ccc;
+  ---blue: #1d9bf0;
+  ---red: #f4212e;
+  ---purple: #7856ff;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-}
-
-.visualizer{
   width: 100%;
-  margin-bottom: 16px;
+  background-color: var(--background);
+  color: var(--text-color);
 }
 
-.controllers{
+main{
+  margin: auto;
+  width: 100%;
+  max-width: 820px;
+  padding: 32px;
+  border:  1px solid var(--border);
+  border-bottom: none;
+  border-top: none;
+  height: 100vh;
   display: flex;
-  padding: 16px;
-  gap: 32px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.controllers button{
+section{
   width: 100%;
+}
+
+.container-input {
+  display: flex;
+  gap: 8px;
+}
+
+.container-input textarea {
+  flex: 1;
+  border-radius: 4px;
+  color: var(--text-color);
+  background-color: var(--background);
+  border: 1px solid  var(--border);
+  padding: 4px 8px;  
+}
+
+.container-input button {
+  color: var(--text-color);
+  background: var(---blue);
+  border-radius: 4px;
+  border: none;
+  padding: 4px 8px;
+}
+
+.container-input button:hover{
+  cursor: pointer;
+}
+
+.container-input button:disabled{
+  opacity: 0.5;
+  cursor: default;
+}
+
+.container-input  [role="button"][aria-pressed="true"] {
+  background: var(---red);
 }

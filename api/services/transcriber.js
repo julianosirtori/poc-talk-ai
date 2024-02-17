@@ -9,7 +9,7 @@ async function getTranscription(file) {
     sampleRateHertz: 48000,
     audioChannelCount: 1,
     enableWordTimeOffsets: true,
-    languageCode: "pt-BR",
+    languageCode: "en-US",
   };
 
   const audio = {
